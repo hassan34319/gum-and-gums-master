@@ -11,8 +11,8 @@
 
 <script>
 import BlogDetail from "../../components/BlogDetail/BlogDetail";
-import { client } from '@/plugins/client.js'; // Adjust the path
-import { urlFor } from '@/plugins/urlImage.js'; // Adjust the path
+import { client } from '../../plugins/client.js'; // Adjust the path
+import { urlFor } from '../..//plugins/urlImage.js'; // Adjust the path
 
 export default {
   components: { BlogDetail },
