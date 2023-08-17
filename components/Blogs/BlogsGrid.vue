@@ -23,7 +23,7 @@
 <script>
 import Blog from "./Blog.vue";
 import { client } from '@/plugins/client.js'; // Adjust the path
-import { urlFor } from '@/plugins/urlImage.js'; // Adjust the path
+import { urlFor } from '@/plugins/UrlImage.js'; // Adjust the path
 
 export default {
   components: { Blog },
