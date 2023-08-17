@@ -35,8 +35,8 @@ export default {
   async created() {
     // Fetch data from Sanity
     try {
-      this.blogs = await client.fetch(`*[_type == "blog"]`);
-      console.log(this.blogs[0].image.asset)
+      this.blogs = await client.fetch(`*[_type == "blog" && !(_id in path("drafts.**"))]`);
+      console.log(this.blogs)
     } catch (error) {
       console.error("Error fetching data:", error);
     }
