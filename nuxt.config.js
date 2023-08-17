@@ -34,7 +34,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~plugins/owl.js', ssr: false }
+    { src: '~plugins/owl.js', ssr: false },
+    { src: '~plugins/client.js', ssr: true },
+    { src: '~plugins/UrlImage.js', ssr: true }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
